@@ -43,7 +43,7 @@ a {
 
 .border-shadow {
     border: 1px solid var(--border-btn);
-    box-shadow: 1px 3px 10px #e9ecef;
+    box-shadow: 1px 3px 10px #eadbc6;
 }
 
 .text-dark {
@@ -110,6 +110,11 @@ table {
 
 .table tr:hover td>a {
     box-shadow: none;
+    border-color: orange;
+}
+
+#del:hover {
+    border-color: black;
 }
 
 .table .thead-dark th {
