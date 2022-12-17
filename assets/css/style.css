@@ -99,7 +99,6 @@ table {
 }
 
 .table td>a.btn {
-    padding: .3em 1em;
     font-size: 1.1em;
     margin: 0 .2em;
 }
@@ -113,8 +112,40 @@ table {
     border-color: orange;
 }
 
+#del {
+    padding: 0 0.3em;
+}
+
 #del:hover {
     border-color: black;
+}
+
+@media only screen and (max-width: 1024px) {
+
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+    }
+
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr {
+        border: 1px solid var(--border);
+    }
+
+    td {
+        border: none;
+        position: relative;
+    }
+
 }
 
 .table .thead-dark th {
