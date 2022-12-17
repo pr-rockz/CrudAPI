@@ -17,20 +17,22 @@ exports.create = (req, res) => {
         email: req.body.email,
         gender: req.body.gender,
         languages: req.body.languages,
-        githubUsername: req.body.githubUsername,
+        githubUsername: req.body.githubUsername
     })
 
     // save user in the database
     user
         .save(user)
         .then(data => {
-            res.send(data)
+            //res.send(data)
+            res.redirect('/');
         })
         .catch(err => {
             res.status(500).send({
-                message: err.message || "Some error occurred while creating operation"
+                message: err.message || "Some error occurred while creating a create operation"
             });
         });
+
 
 }
 
